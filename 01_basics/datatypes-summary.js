@@ -39,3 +39,31 @@ const myFucntion =function(){
     console.log("hello world");
 }
 
+
+
+// Stack(Primitive) copy, Heap(Non-Primitive)reference
+
+// stack
+let myYoutubename = "Sukhpreet"
+
+let anothername = myYoutubename
+console.log(anothername);
+ anothername = "khushi"
+ console.log(myYoutubename); // output sukhpreet
+ console.log(anothername); // output khushi
+
+ 
+ 
+ 
+ //heap
+ let userOne = {
+    email :"sukhpreet.com",
+    upi: "user@ghg"
+ }
+
+ let userTwo = userOne
+ userTwo.email = "khushi@gmail.com"
+
+ console.log(userOne); //output : khsuhi@gmail.com
+
+ console.log(userTwo); //output : khsuhi@gmail.com
